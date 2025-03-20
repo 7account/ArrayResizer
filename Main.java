@@ -9,5 +9,12 @@ public class Main {
         System.out.println(ArrayResizer.isNonZeroRow(arr, 1));
         System.out.println(ArrayResizer.isNonZeroRow(arr, 2));
         System.out.println(ArrayResizer.isNonZeroRow(arr, 3));
+        int[][] smaller = ArrayResizer.resize(arr);
+        for (int[] row : smaller) {
+            for (int col : row) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
     }
 }
